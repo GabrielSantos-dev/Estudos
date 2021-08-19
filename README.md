@@ -1,2 +1,2 @@
-# Java
-Estudos sobre Java e seus framerworks
+# Estudos
+Anotações e Códigos desenvolvidos nos meus estudos
