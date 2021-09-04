@@ -3,7 +3,7 @@
 
 Document Object Model (Modelo de Objeto de Documentos) é um padrão de como acessar e modificar os elementos HTML de uma página. 
 
-![arvore_de_elementos_html](C:\Users\gcris\Documents\GitHub\Estudos\Frontend\JavaScript\Manipulando a DOOM\Imagens\arvore_de_elementos_html.PNG)
+![arvore_de_elementos_html](Frontend/JavaScript/Manipulando a DOOM/Imagens/arvore_de_elementos_html.PNG)
 
 #### D.O.M vs B.O.M <h4>
 
