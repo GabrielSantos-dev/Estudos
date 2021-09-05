@@ -14,11 +14,11 @@ Browser Object Model(O modelo de Objeto do Navegador) é uma convenção especí
 #### Manipulando a D.O.M <h4>
 
 É possível manipular a D.O.M através de métodos como esses abaixo:
-  ![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/manipulando_dom.png)
+  ![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/manipulando_dom.PNG)
 
 ##### Adicionar e deletar elementos <h5>
-![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/adicionar_deletas.png)
+![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/adicionar_deletas.PNG)
 ##### Estilizar elementos <h5>
-  ![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/estilizar.png)
-  ![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/css.png)
+  ![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/estilizar.PNG)
+  ![arvoredom](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/css.PNG)
 
