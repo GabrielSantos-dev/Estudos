@@ -29,4 +29,8 @@ Browser Object Model(O modelo de Objeto do Navegador) é uma convenção especí
   
   ![disparaeventos](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/disparando%20eventos%20no%20JavaScript.PNG)
   
+ ## Exemplo Prático desenvolvido nas Aulas 
+  
+![Exercício Dark Mode e Light Mode](./dark-mode-exercicio.gif)
+  
   
