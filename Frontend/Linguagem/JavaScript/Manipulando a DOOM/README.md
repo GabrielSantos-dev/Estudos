@@ -33,4 +33,4 @@ Browser Object Model(O modelo de Objeto do Navegador) é uma convenção especí
   
 ![Exercício Dark Mode e Light Mode](./Imagens/dark-mode-exercicio.gif)
   
-  
+  Código do exercício: [Dark mode eventos](https://github.com/GabrielSantos-dev/Estudos/tree/main/Frontend/Linguagem/JavaScript/Manipulando%20a%20DOOM/Exercicio%20Pr%C3%A1tico).
