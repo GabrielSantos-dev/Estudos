@@ -26,6 +26,7 @@ Browser Object Model(O modelo de Objeto do Navegador) é uma convenção especí
   Change(Quando um valor de algum campo mudar, a página pode ser atualizada) e Load (Quando a página acabou de carregar executa algum evento).
   #### Como acionar os eventos <h4>
   A função "addEventListener" é um "escutador" de eventos. Selecionando seu elemento, o "addEventListener" vai monitorar qualquer evento e quando o elemento sofrer qualquer evento, a função será executada.
+  
   ![disparaeventos](https://github.com/GabrielSantos-dev/Estudos/blob/main/Frontend/JavaScript/Manipulando%20a%20DOOM/Imagens/disparando%20eventos%20no%20JavaScript.PNG)
   
   
