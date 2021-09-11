@@ -1,0 +1,21 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
+import { Deck, Draw } from './api.models';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ApiService {
+
+  constructor(
+    private httpClient: HttpClient
+  ) { }
+  getDeckDraw(deckId: string, numberOfCards: number = 5): Observable<Draw>{
+    return this.httpClient.get<Draw>(`${environment.apiUrl}/deck/${deckId}/draw/?count=${numberOfCards}`)
+  }
+  postDeck(){
+    return this.httpClient.get<Deck>(`${environment.apiUrl}`)
+  }
+}
