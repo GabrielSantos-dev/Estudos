@@ -31,6 +31,6 @@ Browser Object Model(O modelo de Objeto do Navegador) é uma convenção especí
   
  ## Exemplo Prático desenvolvido nas Aulas 
   
-![Exercício Dark Mode e Light Mode](./imagens/dark-mode-exercicio.gif)
+![Exercício Dark Mode e Light Mode](imagens/dark-mode-exercicio.gif)
   
   
