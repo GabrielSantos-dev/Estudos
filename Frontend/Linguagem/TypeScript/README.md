@@ -10,7 +10,7 @@ ECMAScript é uma especificação de linguagens de script com marca registrada p
 
 ## Programação Orientada a Objetos em TypeScript
 
-    O TypeScript possibilita a inclusão do paradigma Programação Orientada a Objetos no JavaScript, sendo assim vamos aos exemplos de POO aplicados no TypeScript:
+O TypeScript possibilita a inclusão do paradigma Programação Orientada a Objetos no JavaScript, sendo assim vamos aos exemplos de POO aplicados no TypeScript.
 
 
 # Fontes Usadas Para Estudo do TypeScript:
