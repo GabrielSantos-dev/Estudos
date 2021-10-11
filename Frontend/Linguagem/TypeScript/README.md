@@ -12,6 +12,15 @@ ECMAScript é uma especificação de linguagens de script com marca registrada p
 
 O TypeScript possibilita a inclusão do paradigma Programação Orientada a Objetos no JavaScript, sendo assim vamos aos exemplos de POO aplicados no TypeScript.
 
+### Encapsulamento
+
+O conceito de encapsulamento define uma forma de estruturar o código para que um determinado bloco tenha pontos de acesso específicos para o ambiente externo, o que garante a visibilidade e acessibilidade controladas dos elementos internos da classe.
+
+```
+private _saldo: number;
+get Saldo(): number { return this._saldo; }
+
+```
 
 # Fontes Usadas Para Estudo do TypeScript:
 
