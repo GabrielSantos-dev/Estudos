@@ -33,3 +33,25 @@ function redirecione(usuario: IUsuario | IAdmin){
         //redirecionar para a área do usuário
     }
 }
+
+//variáveis com propriedade readonly e private
+
+interface Cachorro {
+    nome: string;
+    idade: number;
+    parqueFavorito?: string; 
+}
+
+class MeuCachorro implements Cachorro {
+    nome = 'Bob';
+    idade = 7;
+
+    constructor(nome, idade){
+        this.nome = nome;
+        this.idade = idade;
+  }
+}
+
+const cao = new MeuCachorro ('Bob', 7);
+
+//Como importar bibliotécas no typescript
