@@ -39,7 +39,7 @@ export class OrdemCompraComponent implements OnInit {
     this.itensCarrinho = this.carrinhoService.exibirItens();
     console.log(this.itensCarrinho);
   }
-
+2021727496005
   public confirmarCompra(): void {
     if (this.formulario.status === 'INVALID') {
       this.formulario.get('endereco')?.markAsTouched();
