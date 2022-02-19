@@ -22,3 +22,5 @@
 
 :heavy_check_mark:Acessar banco de dados NoSQL
 
+[Arquivo Golang]: https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Golang/5-Operadores/operadores.go	"Arquivo Golang"
+
