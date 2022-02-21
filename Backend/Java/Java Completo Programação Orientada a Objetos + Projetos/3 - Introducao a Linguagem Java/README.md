@@ -58,7 +58,7 @@
 
 **Modelo de execução**
 
-![](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programação%20Orientada%20a%20Objetos%20%2B%20Projetos/Nova%20pasta/modelo_de_execucao_java.png)
+![](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programação%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/modelo_de_execucao_java.png)
 
 ##### Estrutura de uma aplicação Java
 
