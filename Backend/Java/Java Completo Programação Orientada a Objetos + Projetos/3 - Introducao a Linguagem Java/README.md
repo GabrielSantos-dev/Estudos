@@ -58,7 +58,7 @@
 
 **Modelo de execução**
 
-![](C:\Users\gcris\Documents\GitHub\Estudos\Backend\Java\Java Completo Programação Orientada a Objetos + Projetos\Imagens\modelo_de_execucao_java.png)
+![](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programação%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/modelo_de_execucao_java.png)
 
 ##### Estrutura de uma aplicação Java
 
@@ -111,3 +111,4 @@
 - Executar o programa: Botão direito no arquivo -> Run As -> Java Application
 - Como fechar e reabrir o projeto? E o workspace?
 - Dica: indentação automática: CTRL + SHIFT -> F
+
