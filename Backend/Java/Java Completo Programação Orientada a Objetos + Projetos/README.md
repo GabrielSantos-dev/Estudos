@@ -2,8 +2,9 @@
 
 ### Curso ministrado pelo professor Nelio Alves na Udemy.
 
-<summary>Click to expand!</summary>
+<summary>
 #### Objetivos de aprendizado:
+  </summary>
 
 :heavy_check_mark: Dominar Programação Orientada a Objetos e linguagem Java
 
