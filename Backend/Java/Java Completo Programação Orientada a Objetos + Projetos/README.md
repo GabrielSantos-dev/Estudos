@@ -28,123 +28,175 @@
 
 <details>
   <summary>1 - Introdução </summary>
-  # Introdução a Linguagem Java
-
-### O que é Java?
-- Linguagem de programação (regras sintáticas) • Plataforma de desenvolvimento e execução
-- Bibliotecas (API) • Ambientes de execução.
-
-### Histórico 
-
-- Problemas resolvidos e motivo de seu sucesso: 
-- Ponteiros / gerenciamento de memória 
-- Portabilidade falha: reescrever parte do código ao mudar de SO 
-- Utilização em dispositivos diversos 
-- Custo 
-- Criada pela Sun Microsystems no meio da década de 1990
--  Adquirida pela Oracle Corporation em 2010
-
-### Aspectos notáveis
-
-- Código compilado para bytecode e executado em máquina virtual (JVM) 
-- Portável, segura, robusta 
-- Roda em vários tipos de dispositivos 
-- Domina o mercado corporativo desde o fim do século 20
-- Padrão Android por muitos anos
-
-### **Edições**
-
-- Java ME - Java Micro Edition - dispositivos embarcados e móveis - IoT
-  - http://www.oracle.com/technetwork/java/javame
-- Java SE - Java Standard Edition - core - desktop e servidores
-  - http://www.oracle.com/technetwork/java/javase
-  - https://en.wikipedia.org/wiki/Java_version_history
-- JavaFX - desktop e RIA
-- Java EE - Java Enterprise Edition - aplicações corporativas
-  - http://www.oracle.com/technetwork/java/javaee
-  - https://en.wikipedia.org/wiki/Java_EE_version_history
-
-
-#### Contextualização Parte 2 JRE, JDK, bytecodes e máquina virtual
-
-##### 	Bibliotecas - API specification
-
-- ##### https://docs.oracle.com/javase/8/docs/api/
-- https://docs.oracle.com/javase/10/docs/api/
-
-- JVM - Java Virtual Machine
-  - Máquina virtual do Java - necessário para executar sistemas Java
-- http://www.oracle.com/technetwork/java/javase/downloads
-  - JRE - Java Runtime Environment
-  - Necessário para usuários finais executarem aplicações Java no computador
-- Server JRE
-  - Necessário para executar sistemas Java em servidores
-- JDK - Java Development Kit
-  - Necessário para desenvolvedores Java. Contém o JRE, mais ferramentas para desenvolvimento, depuração e monitoramento de projetos Java.
-
-#### **Compilação e interpretação**
-
-- Linguagens compiladas: C, C++
-- Linguagens interpretadas: PHP, JavaScript
-- Linguagens pré-compiladas + máquina virtual: Java, C#
-
-**Modelo de execução**
-
-![](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programação%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/modelo_de_execucao_java.png)
-
-##### Estrutura de uma aplicação Java
-
-- Uma aplicação é composta por classes
-- package = agrupamento LÓGICO de classes relacionadas
-- Módulo (Java 9+) = Agrupamento lógico de pacotes relacionados
-  - Runtime = Agrupamento físico
-- Aplicação = Agrupamento de módulo relacionados
-
-#### Intalação do JDK e Eclipse no Windows
-
-##### **Checklist**
-
-- Certifique-se de que seu Windows esteja devidamente licenciado e atualizado
-  - Windows update
-
-- Baixar e instalar o Java JDK
-  - http://www.oracle.com/technetwork/java/javase/downloads
-
-- Configurar variáveis de ambiente do sistema
-  - Painel de Controle -> Variáveis de Ambiente
-  - Variável JAVA_HOME: C:\app.Program Files\Java\jdk-10.0.1
-  - Variável Path: incluir C:\app.Program Files\Java\jdk-10.0.1\bin
-  - Testar no terminal de comando: java --version
-
-- Baixar e descompactar o Eclipse
-  - https://www.eclipse.org/downloads/eclipse-packages/
-  - Testar: rodar o Eclipse e escolher um "workspace" (pasta onde você vai salvar seus projetos)
-
-#### Primeiro programa em Java no Eclipse
-
-**Checklist**
-
-- Window -> Perspective -> Open Perspective -> Java
-- File -> New -> Java Project
-- Package Explorer
-  - JRE System Library
-  - Pasta "src"
-- Criar classe
-  - Botão direito no projeto -> New -> Class
-  - Escolher um nome para a classe (iniciar com letra Maiúscula)
-  - Escolher um nome para o pacote (iniciar com letra Minúscula)
-  - Selecionar public static void main
-- Classe
-  - Package
-  - Cláusula import: referências a outros pacotes
-  - Classe
-  - Método
-  - public static void main(String[] args)
-- Executar o programa: Botão direito no arquivo -> Run As -> Java Application
-- Como fechar e reabrir o projeto? E o workspace?
-- Dica: indentação automática: CTRL + SHIFT -> F
+    Neste módulo só teve uma simples apresentação do curso
 </details>
 <details>
-  <summary>1 - Introdução </summary>
+  <summary> **2 - Conceitos de Programação** </summary>
+  Neste módulo veremos os conceitos mais básicos de programação.
+
+### O que é um algoritmo ?
+
+Algoritmo é uma sequência finita de instruções dadas ao computador para se resolver um problema. É aplicado em diversas áreas do conhecimento.  
+
+Exemplo de uma resolução de um problema do dia a dia, usando algoritmo:
+
+1 - Colocar a roupa em um recipiente
+
+2 - Colocar um pouco de sabão e amaciante
+
+3 - Encher d e água 
+
+4 - Mexer tudo até dissolver todo o sabão
+
+5 - Deixar de molho por vinte minutos 
+
+6 - Esfregar a roupa 
+
+7 - Enxaguar a roupa 
+
+8 - Torcer
+
+### O que é uma Automação ?
+
+Consiste em utilizar máquina(s) para executar o procedimento desejado de forma automática ou semiautomática.
+
+### O que é uma Linguagem de Programação ?
+
+É um conjunto de regras **léxicas** (ortografia) e **sintáticas** (gramática) para se escrever programas.
+
+------
+
+**Léxica:** Diz respeito à correção das palavras "isoladas" (ortografia)
+
+**Exemplo (Português) :**
+
+Cachorro :heavy_check_mark:
+
+Caxorro  :x:
+
+**Exemplo (Programação) :**
+
+main :heavy_check_mark:
+
+maim :x:
+
+------
+
+**Sintática:** Diz respeito à correção das sentenças (gramática).
+
+**Exemplo (Português) :**
+
+O cachorro está com fome :heavy_check_mark:
+
+A cachorro está com fome  :x:
+
+**Exemplo (Programação) :**
+
+x = 2 + y; :heavy_check_mark:
+
+x = + 2 y; :x:
+
+------
+</details>
+<details>
+  <summary>3 - </summary>
   
 </details>
+<details>
+  <summary>4 - </summary>
+  
+</details>
+<details>
+  <summary>5 - </summary>
+  
+</details>
+<details>
+  <summary>6 - </summary>
+  
+</details>
+<details>
+  <summary>7 - </summary>
+  
+</details>
+<details>
+  <summary>8 - </summary>
+  
+</details>
+<details>
+  <summary>9 - </summary>
+  
+</details>
+<details>
+  <summary>10 - </summary>
+  
+</details>
+<details>
+  <summary>11 - </summary>
+  
+</details>
+<details>
+  <summary>12 - </summary>
+  
+</details>
+<details>
+  <summary>13 - </summary>
+  
+</details>
+<details>
+  <summary>14 - </summary>
+  
+</details>
+<details>
+  <summary>15 - </summary>
+  
+</details>
+<details>
+  <summary>16 - </summary>
+  
+</details>
+<details>
+  <summary>17 - </summary>
+  
+</details>
+<details>
+  <summary>18 - </summary>
+  
+</details>
+<details>
+  <summary>19 - </summary>
+  
+</details>
+<details>
+  <summary>20 - </summary>
+  
+</details>
+<details>
+  <summary>21 - </summary>
+  
+</details>
+<details>
+  <summary>22 - </summary>
+  
+</details>
+<details>
+  <summary>23 - </summary>
+  
+</details>
+<details>
+  <summary>24 - </summary>
+  
+</details>
+<details>
+  <summary>25 - </summary>
+  
+</details>
+<details>
+  <summary>26 - </summary>
+  
+</details>
+<details>
+  <summary>27 - </summary>
+  
+</details>
+
+
