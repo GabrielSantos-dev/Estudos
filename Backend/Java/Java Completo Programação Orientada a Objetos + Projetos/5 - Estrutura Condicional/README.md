@@ -4,7 +4,7 @@
 
 São expressões que comparam uma coisa com outra e o resultado sempre é um valor verdade (Verdadeiro ou Falso ).
 
-"imagem dos operadores comparativos"
+![operadores_comparativos](C:\Users\gcris\Documents\GitHub\Estudos\Backend\Java\Java Completo Programação Orientada a Objetos + Projetos\Imagens\operadores_comparativos.png)
 
 ##### Expressões lógicas:
 
