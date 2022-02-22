@@ -1,8 +1,9 @@
 # Curso Java Completo Programação Orientada a Objetos + Projetos
 
-#### Curso ministrado pelo professor Nelio Alves na Udemy.
+### Curso ministrado pelo professor Nelio Alves na Udemy.
 
-:heavy_check_mark: Objetivos de aprendizado:
+<summary>Click to expand!</summary>
+#### Objetivos de aprendizado:
 
 :heavy_check_mark: Dominar Programação Orientada a Objetos e linguagem Java
 
