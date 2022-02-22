@@ -1,3 +1,5 @@
+# Estrutura Sequencial
+
 **Tipos primitivos em Java (tipo valor)**
 
 ![](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programação%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/tipos_primitivos.png)
