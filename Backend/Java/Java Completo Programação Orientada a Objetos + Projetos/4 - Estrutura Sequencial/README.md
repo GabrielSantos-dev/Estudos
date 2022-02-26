@@ -22,7 +22,7 @@ Quando criamos um array ou um objeto com atributos desses tipos, esses são os v
 #### Restrições e convenções para nomes
 - Não pode começar com dígito: use uma letra ou _
 - Não usar acentos ou til
-- Não pode ter espaço em branco
+- Não  pode ter espaço em branco
 - Sugestão: use nomes que tenham um significado
 #### Convenções
 
