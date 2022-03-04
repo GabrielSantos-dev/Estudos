@@ -299,7 +299,6 @@ public class Tipos {
   <summary>5- Estrutura Condicional</summary>
 
   #### Expressões comparativas:
->>>>>>> e244ee0c27fd5b8680822ece5f2c1299d4114c67
 
 São expressões que comparam uma coisa com outra e o resultado sempre é um valor verdade (Verdadeiro ou Falso ).
 
@@ -321,7 +320,6 @@ Assim como as expressões comparativas o resultado das expressões lógicas são
   <summary>6 - Estrutura Repetitivas</summary>
 
 #### Estrutura Repetitiva:
->>>>>>> e244ee0c27fd5b8680822ece5f2c1299d4114c67
 
 O que é estrutura de repetição? Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
 
