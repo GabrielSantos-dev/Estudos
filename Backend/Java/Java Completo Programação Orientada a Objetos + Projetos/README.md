@@ -297,33 +297,35 @@ public class Tipos {
 </details>
 <details>
   <summary>5- Estrutura Condicional</summary>
-  ### Expressões comparativas:
 
+  #### Expressões comparativas:
+>>>>>>> e244ee0c27fd5b8680822ece5f2c1299d4114c67
 
 São expressões que comparam uma coisa com outra e o resultado sempre é um valor verdade (Verdadeiro ou Falso ).
 
-![operadores_comparativos.png](Java%2039d1a/operadores_comparativos.png)
+![operadores_comparativos.png](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/operadores_comparativos.png)
 
-### **Expressões Lógicas:**
+#### Expressões Lógicas:
 
 Assim como as expressões comparativas o resultado das expressões lógicas são um valor verdade (Verdadeiro ou Falso )
 
-![operadores_lógicos.jpg](Java%2039d1a/operadores_lgicos.jpg)
+![operadores_lógicos.jpg](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/operadores_l%C3%B3gicos.jpg)
 
-### **Estrutura condicional:**
+#### Estrutura condicional:
 
 É uma estrutura de controle que permite definir que um certo bloco de comandos somente será executado dependendo de uma condição.
 
-![if_else.png](Java%2039d1a/if_else.png)
+![if_else.png](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/if_else.png)
 </details>
 <details>
   <summary>6 - Estrutura Repetitivas</summary>
-  ### Estrutura Repetitiva
 
+#### Estrutura Repetitiva:
+>>>>>>> e244ee0c27fd5b8680822ece5f2c1299d4114c67
 
 O que é estrutura de repetição? Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
 
-### **Expressão While**
+#### Expressão While:
 
 É uma estrutura de controle que repete um bloco de comandos enquanto uma condição for verdadeira. Quando usar ? : quando não se sabe previamente a quantidade de repetições que será realizada. 
 
@@ -337,7 +339,7 @@ While (condição){
 }
 ```
 
-### **Problema exemplo:**
+#### Problema exemplo:
 
 Digitar um número e mostrar sua raiz quadrada com três casas decimais, depois repetir o procedimento. Quando o usuário digitar um número negativo (podendo inclusive ser na primeira vez), mostrar uma mensagem "Negative number" e terminar o programa.
 
@@ -385,9 +387,9 @@ public class app.Program {
 }
 ```
 
-### **Expressão For (Para)**
+#### Expressão For (Para)
 
-![Untitled](Java%2039d1a/Untitled.png)
+![Untitled](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programa%C3%A7%C3%A3o%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/for.png)
 
 **Problema exemplo**
 
@@ -429,11 +431,11 @@ public class app.Program {
 }
 ```
 
-### ****Exercício de fixação - estruturas repetitivas while e for****
+#### Exercício de fixação - estruturas repetitivas while e for:
 
 Fazer um programa para ler um número N (se for digitado um valor não positivo, mostrar uma mensagem e ler novamente). Em seguida, N valores inteiros. Mostrar o maior dentre os N números digitados. Veja exemplo:
 
-### Exemplo:
+#### Exemplo:
 
 ```
 Enter N: 0
@@ -482,7 +484,7 @@ public class app.Program {
 }
 ```
 
-### ****Estrutura repetitiva do-while****
+#### Estrutura repetitiva do-while:
 
 **Problema exemplo**
 
