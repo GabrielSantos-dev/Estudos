@@ -297,14 +297,238 @@ public class Tipos {
 </details>
 <details>
   <summary>5- Estrutura Condicional</summary>
-  
+  ### **Expressões comparativas:**
+
+São expressões que comparam uma coisa com outra e o resultado sempre é um valor verdade (Verdadeiro ou Falso ).
+
+![operadores_comparativos.png](Java%2039d1a/operadores_comparativos.png)
+
+### **Expressões Lógicas:**
+
+Assim como as expressões comparativas o resultado das expressões lógicas são um valor verdade (Verdadeiro ou Falso )
+
+![operadores_lógicos.jpg](Java%2039d1a/operadores_lgicos.jpg)
+
+### **Estrutura condicional:**
+
+É uma estrutura de controle que permite definir que um certo bloco de comandos somente será executado dependendo de uma condição.
+
+![if_else.png](Java%2039d1a/if_else.png)
 </details>
 <details>
-  <summary>6 - </summary>
-  
+  <summary>6 - Estrutura Repetitivas</summary>
+  ### **Estrutura Repetitiva**
+
+O que é estrutura de repetição? Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
+
+### **Expressão While**
+
+É uma estrutura de controle que repete um bloco de comandos enquanto uma condição for verdadeira. Quando usar ? : quando não se sabe previamente a quantidade de repetições que será realizada. 
+
+Exemplo:
+
+```java
+While (condição){
+	instrução 1
+	instrução 2
+	instrução 3	
+}
+```
+
+### **Problema exemplo:**
+
+Digitar um número e mostrar sua raiz quadrada com três casas decimais, depois repetir o procedimento. Quando o usuário digitar um número negativo (podendo inclusive ser na primeira vez), mostrar uma mensagem "Negative number" e terminar o programa.
+
+```
+Enter a number: 25
+5.000
+Enter another number: 10
+3.162
+Enter another number: 9
+3.000
+Enter another number: -4
+Negative number
+
+```
+
+Solução :
+
+```java
+package app;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class app.Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("ENter a number: ");
+		double n = sc.nextDouble();
+		
+		while(n > 0.0) {
+			double sr = Math.sqrt(n);
+			//.3f formata a saída com a casa decimal de 3 dígitos
+			System.out.printf("%.3f%n", sr);
+			System.out.println("Enter another number");
+			n = sc.nextDouble();
+		}
+		
+		System.out.println("NEgative number... end!");
+		sc.close();
+	}
+}
+```
+
+### **Expressão For (Para)**
+
+![Untitled](Java%2039d1a/Untitled.png)
+
+**Problema exemplo**
+
+Digitar um número N e depois N valores inteiros. Mostrar a soma dos N valores digitados.
+
+```
+How many integer numbers are you going to enter? 3
+Value #1: 10
+Value #2: 7
+Value #3: 8
+Sum = 25
+```
+
+Solução :
+
+```java
+import java.util.Scanner;
+
+public class app.Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("How many integer number are you going to enter: ");
+		int n = sc.nextInt();
+		
+		int sum = 0;
+		
+		for(int i = 1; i<= n ; i++) {
+			System.out.print("Value #" + i + ": ");
+			int x = sc.nextInt();
+			sum += x;
+		}
+		System.out.println("Sum = "+ sum);
+		
+		sc.close();
+	}
+}
+```
+
+### ****Exercício de fixação - estruturas repetitivas while e for****
+
+Fazer um programa para ler um número N (se for digitado um valor não positivo, mostrar uma mensagem e ler novamente). Em seguida, N valores inteiros. Mostrar o maior dentre os N números digitados. Veja exemplo:
+
+### Exemplo:
+
+```
+Enter N: 0
+N must be positive! Try again: -2
+N must be positive! Try again: 4
+Value #1: 5
+Value #2: 4
+Value #3: 10
+Value #4: 2
+Higher = 10
+```
+
+Solução :
+
+```java
+import java.util.Scanner;
+
+public class app.Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc  = new Scanner(System.in);
+		
+		System.out.print("Enter N: ");
+		int n = sc.nextInt();
+		while(n <= 0) {
+			System.out.println("N nust be positive! try again!: ");
+			n = sc.nextInt();
+		}
+		
+		int higher = Integer.MIN_VALUE;
+		for(int i = 1 ; i <= n ; i++) {
+			System.out.println("Value #"+ i + ": ");
+			int x = sc.nextInt();
+			if(x > higher) {
+				higher = x;
+			}
+		}
+
+		System.out.println("Higher = "+ higher);
+		
+		sc.close();
+
+	}
+
+}
+```
+
+### ****Estrutura repetitiva do-while****
+
+**Problema exemplo**
+
+Digitar um número e mostrar sua raiz quadrada, depois perguntar ao usuário se ele deseja repetir o procedimento (y/n). Caso ele responda 'y', repetir o procedimento.
+
+```
+Enter a number: 9
+Square root = 3.000
+Repeat (y/n)? y
+Enter a number: 10
+Square root = 3.162
+Repeat (y/n)? n
+```
+
+Solução :
+
+```java
+import java.util.Locale;
+import java.util.Scanner;
+
+public class app.Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		char resp;
+		
+		do {
+			System.out.print("Enter a number");
+			double n = sc.nextDouble();
+			double sq = Math.sqrt(n);
+			System.out.printf("Square root = %.3f%n", sq);
+			
+			System.out.print("Repeat? 'y' or 'n'");
+			resp = sc.next().charAt(0);
+			
+		}while(resp != 'n');
+		sc.close();
+	}
+
+}
+```
+
 </details>
 <details>
-  <summary>7 - </summary>
+  <summary>7 - Outros tópicos básicos sobre Java</summary>
   
 </details>
 <details>
