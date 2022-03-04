@@ -100,7 +100,7 @@ x = + 2 y; :x:
 </details>
 <details>
   <summary>3- Introdução a Linguagem Java</summary>
-  
+
 ### O que é Java?
 - Linguagem de programação (regras sintáticas) • Plataforma de desenvolvimento e execução
 - Bibliotecas (API) • Ambientes de execução.
@@ -217,7 +217,7 @@ x = + 2 y; :x:
 </details>
 <details>
   <summary>4- Estrutura Sequencial</summary>
-  
+
 **Tipos primitivos em Java (tipo valor)**
 
 ![](https://github.com/gabrielcristhie/Estudos/blob/main/Backend/Java/Java%20Completo%20Programação%20Orientada%20a%20Objetos%20%2B%20Projetos/Imagens/tipos_primitivos.png)
@@ -297,7 +297,8 @@ public class Tipos {
 </details>
 <details>
   <summary>5- Estrutura Condicional</summary>
-  ### **Expressões comparativas:**
+  ### Expressões comparativas:
+
 
 São expressões que comparam uma coisa com outra e o resultado sempre é um valor verdade (Verdadeiro ou Falso ).
 
@@ -317,7 +318,8 @@ Assim como as expressões comparativas o resultado das expressões lógicas são
 </details>
 <details>
   <summary>6 - Estrutura Repetitivas</summary>
-  ### **Estrutura Repetitiva**
+  ### Estrutura Repetitiva
+
 
 O que é estrutura de repetição? Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
 
@@ -529,87 +531,86 @@ public class app.Program {
 </details>
 <details>
   <summary>7 - Outros tópicos básicos sobre Java</summary>
-  
+
 </details>
 <details>
   <summary>8 - </summary>
-  
+
 </details>
 <details>
   <summary>9 - </summary>
-  
+
 </details>
 <details>
   <summary>10 - </summary>
-  
+
 </details>
 <details>
   <summary>11 - </summary>
-  
+
 </details>
 <details>
   <summary>12 - </summary>
-  
+
 </details>
 <details>
   <summary>13 - </summary>
-  
+
 </details>
 <details>
   <summary>14 - </summary>
-  
+
 </details>
 <details>
   <summary>15 - </summary>
-  
+
 </details>
 <details>
   <summary>16 - </summary>
-  
+
 </details>
 <details>
   <summary>17 - </summary>
-  
+
 </details>
 <details>
   <summary>18 - </summary>
-  
+
 </details>
 <details>
   <summary>19 - </summary>
-  
+
 </details>
 <details>
   <summary>20 - </summary>
-  
+
 </details>
 <details>
   <summary>21 - </summary>
-  
+
 </details>
 <details>
   <summary>22 - </summary>
-  
+
 </details>
 <details>
   <summary>23 - </summary>
-  
+
 </details>
 <details>
   <summary>24 - </summary>
-  
+
 </details>
 <details>
   <summary>25 - </summary>
-  
+
 </details>
 <details>
   <summary>26 - </summary>
-  
+
 </details>
 <details>
   <summary>27 - </summary>
-  
-</details>
 
+</details>
 
