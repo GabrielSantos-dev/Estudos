@@ -531,12 +531,141 @@ public class app.Program {
 </details>
 <details>
   <summary>7 - Outros tópicos básicos sobre Java</summary>
+### Restrições para nomes de variáveis:
+
+- Não pode começar com dígito: use uma letra ou _
+- Não pode usar acentos ou til
+- Não pode ter espaço em branco
+- Sugestão: use nomes que tenham significado
+
+### Exemplo de variáveis escritas de forma errada:
+
+int 5minutes:
+
+int salário;
+
+int salario do funcionário;
+
+### Exemplo de variáveis escritas de forma certa:
+
+int _5minutes;
+
+int salario;
+
+int salarioDoFuncionario;
+
+### Convenções:
+
+- **Camel Case: lastName**
+  - pacotes
+  - atributos
+  - métodos
+  - variáveis e parâmetros
+- **Pascal Case: ProductService**
+  - Classes
+
+### Operadores Bitwise
+
+É possível realizar operações lógicas entre números inteiros em Java. Mas como assim? Operações lógicas não são somente entre valores lógicos (booleanos)?
+
+Sim e Não...
+
+Sim, operações lógicas (E, Ou, Não, Não-E, Não-Ou, Ou-Exclusivo, etc.) são realizadas apenas entre valores lógicos.
+
+Entretanto em Java é possível realizar algumas operações lógicas entre valores numéricos inteiros. Neste caso, as operações lógicas ocorrem no nível de *bits* dos números, ou seja, as operações lógicas ocorrem com as representações binárias dos números.
+
+Para realizar uma operação lógica com números inteiros (a nível de bits) com Java, basta utilizarmos os operadores **&**, **|** e **^**.
+
+### Exemplo:
+
+```java
+public class OperacoesBitwise {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 12;
+
+        System.out.println(a + " | " + b + " = " + (a | b));
+        System.out.println(a + " & " + b + " = " + (a & b));
+        System.out.println(a + " ^ " + b + " = " + (a ^ b));
+
+        a = 9;
+        b = 7;
+
+        System.out.println(a + " | " + b + " = " + (a | b));
+        System.out.println(a + " & " + b + " = " + (a & b));
+        System.out.println(a + " ^ " + b + " = " + (a ^  b));
+
+    }
+
+}
+```
+
+Saída:
+
+```java
+10 | 12 = 14
+10 & 12 = 8
+10 ^ 12 = 6
+9 | 7 = 15
+9 & 7 = 1
+9 ^ 7 = 14
+```
+
+### Funções para formatar Strings:
+
+- Formatar: toLowerCase(),toUpperCase(),trim()
+- Recortar: substring(inicio),substring (incio,fim)
+- Substituir: Replace(char,char),Replace(string,string)
+- Buscar: IndexOf,LastIndexOf
+- str.Split("")
+
+### Comentários em Java:
+
+Comentário de linha:
+
+É expressado com duas barras, exemplo:
+
+```java
+//comentário de linha em Java
+```
+
+Comentário de bloco:
+
+É expressado pelo conjunto de de uma barra e um asterisco, exemplo:
+
+```java
+/* 
+este é o comentário de bloco
+*/
+```
 
 </details>
+
 <details>
-  <summary>8 - </summary>
+  <summary>8 - Introdução a Programção Orientada a Objetos</summary>
+
+### Classe:
+
+- É um tipo estruturado que pode conter (membros):
+  - Atributos (dados / campos)
+  - Métodos (funções / operações)
+- A classe também pode prover muitos outros recursos, tais como:
+  - Construtores
+  - Sobrecarga
+  - Encapsulamento
+  - Herança
+  - Polimorfismo
+- Exemplos:
+  - Entidades: Produto, Cliente, Triangulo
+  - Serviços: ProdutoService, ClienteService, EmailService, StorageService
+  - Controladores: ProdutoController, ClienteController
+  - Utilitários: Calculadora, Compactador
+  - Outros (views, repositórios, gerenciadores, etc.)
 
 </details>
+
 <details>
   <summary>9 - </summary>
 
