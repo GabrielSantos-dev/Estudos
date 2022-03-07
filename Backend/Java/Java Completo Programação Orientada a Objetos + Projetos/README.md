@@ -733,7 +733,30 @@ instanciação do objeto
     • Passar o próprio objeto como argumento na chamada de um método ou
       construtor
 
+### Sobrecarga
 
+  • É um recurso que uma classe possui de oferecer mais de uma
+operação com o mesmo nome, porém com diferentes listas de
+parâmetros.
+
+### Encapsulamento
+  • É um princípio que consiste em
+esconder detalhes de implementação
+de uma classe, expondo apenas
+operações seguras e que mantenham
+os objetos em um estado consistente.
+  • Regra de ouro: o objeto deve sempre
+estar em um estado consistente, e a
+própria classe deve garantir isso.
+
+### Modificadores de Acesso
+
+  • private: o membro só pode ser acessado na própria classe
+  • (nada): o membro só pode ser acessado nas classes do mesmo pacote
+  • protected: o membro só pode ser acessado no mesmo pacote, bem como em
+subclasses de pacotes diferentes
+  • public: o membro é acessado por todas classes (ao menos que ele resida em
+um módulo diferente que não exporte o pacote onde ele está)
 
 </details>
 <details>
