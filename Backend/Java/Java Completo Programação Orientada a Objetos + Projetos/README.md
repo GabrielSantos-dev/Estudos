@@ -760,7 +760,37 @@ um módulo diferente que não exporte o pacote onde ele está)
 
 </details>
 <details>
-  <summary>10 - </summary>
+  <summary>10 - Comportamento de memória, arrays, listas</summary>
+
+### Referência vs. tipos valor 
+
+Variáveis cujo tipo são classes não devem ser entendidas como caixas, mas sim
+“tentáculos” (ponteiros) para caixas
+Product p1, p2;
+p1 = new Product("TV", 900.00, 0);
+p2 = p1;
+
+### Valor "null"
+
+Tipos referência aceitam o valor "null", que indica que a variável aponta pra ninguém.
+  Product p1, p2;
+  p1 = new Product("TV", 900.00, 0);
+  p2 = null;
+
+### Tipos primitivos são tipos valor
+  Em Java, tipos primitivos são tipos valor. Tipos valor são CAIXAS e não ponteiros. 
+  double x, y;
+  x = 10;
+  y = x;
+
+### Garbage Collector
+
+• É um processo que automatiza o gerenciamento de memória de um
+programa em execução
+• O garbage collector monitora os objetos alocados dinamicamente
+pelo programa (no heap), desalocando aqueles que não estão mais
+sendo utilizados.
+
 
 </details>
 <details>
