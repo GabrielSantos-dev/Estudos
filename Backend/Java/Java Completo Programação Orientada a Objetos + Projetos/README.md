@@ -791,7 +791,39 @@ programa em execução
 pelo programa (no heap), desalocando aqueles que não estão mais
 sendo utilizados.
 
+### Boxing, Unboxing e Wrapper
+											
+• Boxing é o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível.
 
+• Unboxing é o processo de conversão de um objeto tipo referênciap ara um objeto tipo valor compatível.
+
+• Wrapper Classes são classes equivalentes aos tipos primitivos
+	• Boxing e Unboxing é natural na linguagem
+	• Uso comum: Campos de entidades em sistemas de informação(Importante!)
+	  • Pois tipos de referência (classes) aceitam valor null e usufruem dos recursos OO
+
+### Foreach
+
+Sintaxe opcional e simplificada para percorrer coleções.
+	
+	Sintaxe:
+	
+```
+	for(tipo apelido: coleção){
+	<comandos>
+	}
+```	
+### Listas
+
+• Lista é uma estrutura de dados homogênea (Dados do mesmo tipo) Então dentro de uma lista você vai guardar apenas dados do mesmo tipo.
+• Lista também é uma coleção ordenada. Isso significa que os elementos são acessados por meio de posições.		
+• Lista inicial é vazia e os seus elementos são alocados sob demanda.
+• No Java o tipo para a gente trabalhar com lista e o tipo List. Classes que implementam essas listas: ArrayList, LinkedList, etc.
+• List é uma interface, por isso não é possível instacia-la.
+• 
+		
+		
+		
 </details>
 <details>
   <summary>11 - </summary>
