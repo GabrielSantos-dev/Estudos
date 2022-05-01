@@ -791,10 +791,226 @@ programa em execução
 pelo programa (no heap), desalocando aqueles que não estão mais
 sendo utilizados.
 
+### Boxing, Unboxing e Wrapper
+											
+• Boxing é o processo de conversão de um objeto tipo valor para um objeto tipo referência compatível.
 
+• Unboxing é o processo de conversão de um objeto tipo referênciap ara um objeto tipo valor compatível.
+
+• Wrapper Classes são classes equivalentes aos tipos primitivos
+	• Boxing e Unboxing é natural na linguagem
+	• Uso comum: Campos de entidades em sistemas de informação(Importante!)
+	  • Pois tipos de referência (classes) aceitam valor null e usufruem dos recursos OO
+
+### Foreach
+
+Sintaxe opcional e simplificada para percorrer coleções.
+	
+	Sintaxe:
+	
+```
+	for(tipo apelido: coleção){
+	<comandos>
+	}
+```	
+### Listas
+
+• Lista é uma estrutura de dados homogênea (Dados do mesmo tipo) Então dentro de uma lista você vai guardar apenas dados do mesmo tipo.
+• Lista também é uma coleção ordenada. Isso significa que os elementos são acessados por meio de posições.		
+• Lista inicial é vazia e os seus elementos são alocados sob demanda.
+• No Java o tipo para a gente trabalhar com lista e o tipo List. Classes que implementam essas listas: ArrayList, LinkedList, etc.
+• List é uma interface, por isso não é possível instacia-la.
+
+```
+Exercicio de Listas:		
+Fazer um programa para ler um número inteiro N e depois os dados (id, nome e salario) de
+N funcionários. Não deve haver repetição de id.
+Em seguida, efetuar o aumento de X por cento no salário de um determinado funcionário.
+Para isso, o programa deve ler um id e o valor X. Se o id informado não existir, mostrar uma
+mensagem e abortar a operação. Ao final, mostrar a listagem atualizada dos funcionários,
+conforme exemplos.
+Lembre-se de aplicar a técnica de encapsulamento para não permitir que o salário possa
+ser mudado livremente. Um salário só pode ser aumentado com base em uma operação de
+aumento por porcentagem dada
+```
+Classe Main:
+```
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class Program {
+	public static void main(String[] args) {
+		List<String> list = new ArrayList<>();
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		list.add(2, "Marco");
+		System.out.println(list.size());
+		for (String x : list) {
+			System.out.println(x);
+		}
+		System.out.println("---------------------");
+		list.removeIf(x -> x.charAt(0) == 'M');
+		for (String x : list) {
+			System.out.println(x);
+		}
+		System.out.println("---------------------");
+		System.out.println("Index of Bob: " + list.indexOf("Bob"));
+		System.out.println("Index of Marco: " + list.indexOf("Marco"));
+		System.out.println("---------------------");
+		List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+		for (String x : result) {
+			System.out.println(x);
+		}
+		System.out.println("---------------------");
+		String name = list.stream().filter(x -> x.charAt(0) == 'J').findFirst().orElse(null);
+		System.out.println(name);
+	}
+}
+```
+Classe Employee:
+```
+public class Employee {
+	
+	private Integer id;
+	private String name;
+	private Double salary;
+	
+	public Employee() {
+		
+	}
+	
+	public Employee(Integer id, String name, Double salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Double getSalary() {
+		return salary;
+	}
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+	
+```
+### Matrizes 		
+
+• Em programação, "matriz" é o nome dado a arranjos bidimensionais
+	• Atenção: "vetor de vetores"
+• Arranjo (array) é uma estrutura de dados: 
+	• Homogênea (dados do mesmo tipo)
+	• Ordenada (elementos acessados por meio de posições)
+	• Alocada de uma vez só, em um bloco contíguo de memória
+• Vantagens:
+	• Acesso imediato aos elementos pela sua posição
+• Desvantagens:
+	• Tamanho fixo
+	• Dificuldade para se realizar inserções e deleções
+		
+Exercicio de Matrizes:
+
+```
+Fazer um programa para ler um número inteiro N e uma matriz de
+ordem N contendo números inteiros. Em seguida, mostrar a diagonal
+principal e a quantidade de valores negativos da matriz.
+```
+
+```
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int [][] mat = new int [n][n];
+		
+		//acessando o numero de linhas e colunas 
+		for (int i=0;i<mat.length;i++) {
+			for (int j=0;j<mat[i].length;j++) {
+				mat[i][j] = sc.nextInt();
+			}
+		}
+		 System.out.println("Main diagonal");
+		 for (int i=0; i<mat.length; i++) {
+			 System.out.println(mat[i][i] + " ");
+		 }
+		 
+		 int count = 0;
+		 //acessando o numero de linhas e colunas 
+		 for (int i=0;i<mat.length;i++) {
+				for (int j=0;j<mat[i].length;j++) {
+					if(mat[i][j] < 0) {
+						count++;
+					}}
+			}
+		 
+		 System.out.println("Negative numbers: " + count);
+		
+		sc.close();
+	}
+}
+```	
 </details>
 <details>
-  <summary>11 - </summary>
+  <summary>11 - Tópicos especiais em Java</summary>
+
+### Trabalhando com Datas - Date
+
+Demonstração de impressão de datas	
+```
+SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
+SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+SimpleDateFormat sdf3 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+sdf3.setTimeZone(TimeZone.getTimeZone("GMT"));
+Date x1 = new Date();
+Date x2 = new Date(System.currentTimeMillis());
+Date x3 = new Date(0L);
+Date x4 = new Date(1000L * 60L * 60L * 5L);
+Date y1 = sdf1.parse("25/06/2018");
+Date y2 = sdf2.parse("25/06/2018 15:42:07");
+Date y3 = Date.from(Instant.parse("2018-06-25T15:42:07Z"));
+System.out.println("x1: " + x1);
+System.out.println("x2: " + x2);
+System.out.println("x3: " + x3);
+System.out.println("x4: " + x4);
+System.out.println("y1: " + y1);
+System.out.println("y2: " + y2);
+System.out.println("y3: " + y3);
+System.out.println("-------------");
+System.out.println("x1: " + sdf2.format(x1));
+System.out.println("x2: " + sdf2.format(x2));
+System.out.println("x3: " + sdf2.format(x3));
+System.out.println("x4: " + sdf2.format(x4));
+System.out.println("y1: " + sdf2.format(y1));
+System.out.println("y2: " + sdf2.format(y2));
+System.out.println("y3: " + sdf2.format(y3));
+System.out.println("-------------");
+System.out.println("x1: " + sdf3.format(x1));
+System.out.println("x2: " + sdf3.format(x2));
+System.out.println("x3: " + sdf3.format(x3));
+System.out.println("x4: " + sdf3.format(x4));
+System.out.println("y1: " + sdf3.format(y1));
+System.out.println("y2: " + sdf3.format(y2));
+System.out.println("y3: " + sdf3.format(y3));
+```
 
 </details>
 <details>
