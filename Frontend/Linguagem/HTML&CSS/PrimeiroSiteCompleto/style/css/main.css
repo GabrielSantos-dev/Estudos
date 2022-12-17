@@ -1,0 +1,189 @@
+body{
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
+p, h1, h2, h3, ul, li, a, form, input, textarea{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+.header__ul li{
+	margin-right: 20px;		
+}
+
+
+.header__ul{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	list-style-type: none;
+
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+nav{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	align-items: center;
+
+}
+
+.container{
+	width: 1172px;
+	margin: 0 auto;
+}
+
+header{
+	background: url("medico.jpg") no-repeat top left / cover;
+	padding-bottom: 145px;
+}
+
+.white__line{
+ 	background: rgba(256,256,256, 0.8);
+	width: 100%;	
+	padding: 17px 0;
+}
+
+.nav__button{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	background: #6bc2f1;
+	padding: 15px 0;
+	text-align: center;
+	width: 140px;
+	margin-left: auto;
+    border-radius: 10px 20px;
+	
+}
+
+.nav__button:hover{
+	background: #303b40;
+	transition: all 0.7s ease;
+    border-radius: 10px 20px;
+	
+}
+
+.logo{
+	font-weight: bold;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-right: 100px;
+}
+
+.logo:first-letter{
+	color: #6bc2f1;
+}
+
+.container ul li a:hover{
+	color: #0778b0;
+}
+
+.offer{
+	margin-top: 375px;
+	color: #fff;
+}
+
+.word__bold{
+	font-weight: bold;
+}
+
+h1{
+	font-size: 70px;
+	font-weight: 400;
+}
+
+.under__h1{
+	font-size: 26px;
+	margin-top: 14px;
+}
+
+.offer__content{
+	font-style: 18px;
+	line-height: 1.8em;
+	margin-top: 47px;
+}
+
+.offer__button{
+	color: #000;
+	text-align: center;
+	width: 200px;
+	padding: 16px 0;
+	background: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 60px;
+    border-radius: 10px 20px;
+}
+
+.offer__button:hover{
+	background: #303b40;
+	color: #fff;
+	opacity: 0.5;
+	transition: all 0.7s ease;
+    border-radius: 10px 20px;
+}
+
+footer{
+	background: #072135;
+	color: #fff;
+	line-height: 1.8em;
+}
+
+.footer__columns{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 120px 0 115px 0;
+}
+
+.footer__header{
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.footer__ul li, .footer__content{
+	font-size: 14px;
+	color: #b8bbbf;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.footer__medical{
+	width: 40%;
+}
+
+.footer__go{
+	width: 15%;
+}
+
+.footer__sp{
+	width: 16%;
+	margin-right: 105px;
+}
+
+
